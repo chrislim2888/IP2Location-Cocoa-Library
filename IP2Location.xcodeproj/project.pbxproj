@@ -3,246 +3,471 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FB9EA7313178F9900E9590A /* IP2Location.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9EA7113178F9900E9590A /* IP2Location.c */; };
-		3FB9EA7613178FD500E9590A /* imath.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9EA7413178FD500E9590A /* imath.c */; };
-		8DD76F9A0486AA7600D96B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.m */; settings = {ATTRIBUTES = (); }; };
-		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
-		A55C1FCC12FE08B200D44C66 /* IPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C1FCB12FE08B200D44C66 /* IPLocation.m */; };
+		D957E7E219A6108700AEA8FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D957E7E019A6108700AEA8FE /* InfoPlist.strings */; };
+		D957E7E619A6108700AEA8FE /* IP2Location.m in Sources */ = {isa = PBXBuildFile; fileRef = D957E7E519A6108700AEA8FE /* IP2Location.m */; };
+		D957E81B19A611B000AEA8FE /* IP2Loc_DBInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = D957E80E19A611B000AEA8FE /* IP2Loc_DBInterface.c */; };
+		D957E81C19A611B000AEA8FE /* IP2Loc_DBInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = D957E80F19A611B000AEA8FE /* IP2Loc_DBInterface.h */; };
+		D957E81D19A611B000AEA8FE /* IP2Location.c in Sources */ = {isa = PBXBuildFile; fileRef = D957E81019A611B000AEA8FE /* IP2Location.c */; };
+		D957E81E19A611B000AEA8FE /* IP2Location.h in Headers */ = {isa = PBXBuildFile; fileRef = D957E81119A611B000AEA8FE /* IP2Location.h */; };
+		D957E8AD19AB4E0600AEA8FE /* IP2Location.h in Headers */ = {isa = PBXBuildFile; fileRef = D957E7E419A6108700AEA8FE /* IP2Location.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9754AED19B6209C0013642C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D957E7DA19A6108700AEA8FE /* Foundation.framework */; };
+		D9754AF019B6209C0013642C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9754AEF19B6209C0013642C /* main.m */; };
+		D9754AFA19B621CC0013642C /* ip2location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D957E7D419A6108600AEA8FE /* ip2location.framework */; };
+		D9754AFB19B622890013642C /* IP-COUNTRY-SAMPLE.BIN in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9754AE419B610200013642C /* IP-COUNTRY-SAMPLE.BIN */; };
+		D9754AFC19B622890013642C /* IPV6-COUNTRY-SAMPLE.BIN in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9754AE519B610200013642C /* IPV6-COUNTRY-SAMPLE.BIN */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D9754AF819B621C60013642C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D957E7CB19A6108600AEA8FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D957E7D319A6108600AEA8FE;
+			remoteInfo = ip2location;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
+		D9754AEA19B6209C0013642C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
+			buildActionMask = 2147483647;
+			dstPath = data;
 			dstSubfolderSpec = 16;
 			files = (
+				D9754AFB19B622890013642C /* IP-COUNTRY-SAMPLE.BIN in CopyFiles */,
+				D9754AFC19B622890013642C /* IPV6-COUNTRY-SAMPLE.BIN in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08FB7796FE84155DC02AAC07 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		3FB9EA6313178F3F00E9590A /* IP2Location */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IP2Location; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FB9EA7113178F9900E9590A /* IP2Location.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = IP2Location.c; path = "/Users/hexasoft/Desktop/IP2Location-cocoa/C-IP2Location-4.0.2/libIP2Location/IP2Location.c"; sourceTree = "<absolute>"; };
-		3FB9EA7213178F9900E9590A /* IP2Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IP2Location.h; path = "/Users/hexasoft/Desktop/IP2Location-cocoa/C-IP2Location-4.0.2/libIP2Location/IP2Location.h"; sourceTree = "<absolute>"; };
-		3FB9EA7413178FD500E9590A /* imath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = imath.c; path = "/Users/hexasoft/Desktop/IP2Location-cocoa/C-IP2Location-4.0.2/libIP2Location/iMath/imath.c"; sourceTree = "<absolute>"; };
-		3FB9EA7513178FD500E9590A /* imath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imath.h; path = "/Users/hexasoft/Desktop/IP2Location-cocoa/C-IP2Location-4.0.2/libIP2Location/iMath/imath.h"; sourceTree = "<absolute>"; };
-		A55C1FCA12FE08B200D44C66 /* IPLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPLocation.h; sourceTree = "<group>"; };
-		A55C1FCB12FE08B200D44C66 /* IPLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPLocation.m; sourceTree = "<group>"; };
+		D957E7D419A6108600AEA8FE /* ip2location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ip2location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D957E7DA19A6108700AEA8FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D957E7DF19A6108700AEA8FE /* ip2location-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ip2location-Info.plist"; sourceTree = "<group>"; };
+		D957E7E119A6108700AEA8FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D957E7E319A6108700AEA8FE /* ip2location-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ip2location-Prefix.pch"; sourceTree = "<group>"; };
+		D957E7E419A6108700AEA8FE /* IP2Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IP2Location.h; sourceTree = "<group>"; };
+		D957E7E519A6108700AEA8FE /* IP2Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IP2Location.m; sourceTree = "<group>"; };
+		D957E80E19A611B000AEA8FE /* IP2Loc_DBInterface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IP2Loc_DBInterface.c; sourceTree = "<group>"; };
+		D957E80F19A611B000AEA8FE /* IP2Loc_DBInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IP2Loc_DBInterface.h; sourceTree = "<group>"; };
+		D957E81019A611B000AEA8FE /* IP2Location.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IP2Location.c; sourceTree = "<group>"; };
+		D957E81119A611B000AEA8FE /* IP2Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IP2Location.h; sourceTree = "<group>"; };
+		D9754AE419B610200013642C /* IP-COUNTRY-SAMPLE.BIN */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = "IP-COUNTRY-SAMPLE.BIN"; path = "data/IP-COUNTRY-SAMPLE.BIN"; sourceTree = "<group>"; };
+		D9754AE519B610200013642C /* IPV6-COUNTRY-SAMPLE.BIN */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = "IPV6-COUNTRY-SAMPLE.BIN"; path = "data/IPV6-COUNTRY-SAMPLE.BIN"; sourceTree = "<group>"; };
+		D9754AEC19B6209C0013642C /* sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sample; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9754AEF19B6209C0013642C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9754AF219B6209C0013642C /* sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sample-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+		D957E7D019A6108600AEA8FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9754AE919B6209C0013642C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9754AFA19B621CC0013642C /* ip2location.framework in Frameworks */,
+				D9754AED19B6209C0013642C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08FB7794FE84155DC02AAC07 /* IP2Location */ = {
+		D957E7CA19A6108600AEA8FE = {
 			isa = PBXGroup;
 			children = (
-				08FB7795FE84155DC02AAC07 /* Source */,
-				A55C1FDE12FE09C500D44C66 /* Resources */,
-				08FB779DFE84155DC02AAC07 /* Libraries */,
-				1AB674ADFE9D54B511CA2CBB /* Products */,
+				D957E86619A61CA800AEA8FE /* data */,
+				D957E7DD19A6108700AEA8FE /* ip2location */,
+				D9754AEE19B6209C0013642C /* sample */,
+				D957E7D619A6108600AEA8FE /* Frameworks */,
+				D957E7D519A6108600AEA8FE /* Products */,
 			);
-			name = IP2Location;
 			sourceTree = "<group>";
 		};
-		08FB7795FE84155DC02AAC07 /* Source */ = {
+		D957E7D519A6108600AEA8FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3FB9EA7413178FD500E9590A /* imath.c */,
-				3FB9EA7513178FD500E9590A /* imath.h */,
-				3FB9EA7113178F9900E9590A /* IP2Location.c */,
-				3FB9EA7213178F9900E9590A /* IP2Location.h */,
-				08FB7796FE84155DC02AAC07 /* main.m */,
-				A55C1FCA12FE08B200D44C66 /* IPLocation.h */,
-				A55C1FCB12FE08B200D44C66 /* IPLocation.m */,
-				A55C1F2A12FE023700D44C66 /* IP2Location */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		08FB779DFE84155DC02AAC07 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
-			);
-			name = Libraries;
-			sourceTree = "<group>";
-		};
-		1AB674ADFE9D54B511CA2CBB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3FB9EA6313178F3F00E9590A /* IP2Location */,
+				D957E7D419A6108600AEA8FE /* ip2location.framework */,
+				D9754AEC19B6209C0013642C /* sample */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A55C1F2A12FE023700D44C66 /* IP2Location */ = {
+		D957E7D619A6108600AEA8FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D957E7DA19A6108700AEA8FE /* Foundation.framework */,
 			);
-			name = IP2Location;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A55C1FDE12FE09C500D44C66 /* Resources */ = {
+		D957E7DD19A6108700AEA8FE /* ip2location */ = {
 			isa = PBXGroup;
 			children = (
+				D957E80219A611B000AEA8FE /* libIP2Location */,
+				D957E7E419A6108700AEA8FE /* IP2Location.h */,
+				D957E7E519A6108700AEA8FE /* IP2Location.m */,
+				D957E7DE19A6108700AEA8FE /* Supporting Files */,
 			);
-			name = Resources;
+			path = ip2location;
+			sourceTree = "<group>";
+		};
+		D957E7DE19A6108700AEA8FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D957E7DF19A6108700AEA8FE /* ip2location-Info.plist */,
+				D957E7E019A6108700AEA8FE /* InfoPlist.strings */,
+				D957E7E319A6108700AEA8FE /* ip2location-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D957E80219A611B000AEA8FE /* libIP2Location */ = {
+			isa = PBXGroup;
+			children = (
+				D957E80E19A611B000AEA8FE /* IP2Loc_DBInterface.c */,
+				D957E80F19A611B000AEA8FE /* IP2Loc_DBInterface.h */,
+				D957E81019A611B000AEA8FE /* IP2Location.c */,
+				D957E81119A611B000AEA8FE /* IP2Location.h */,
+			);
+			path = libIP2Location;
+			sourceTree = "<group>";
+		};
+		D957E86619A61CA800AEA8FE /* data */ = {
+			isa = PBXGroup;
+			children = (
+				D9754AE419B610200013642C /* IP-COUNTRY-SAMPLE.BIN */,
+				D9754AE519B610200013642C /* IPV6-COUNTRY-SAMPLE.BIN */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		D9754AEE19B6209C0013642C /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				D9754AEF19B6209C0013642C /* main.m */,
+				D9754AF119B6209C0013642C /* Supporting Files */,
+			);
+			path = sample;
+			sourceTree = "<group>";
+		};
+		D9754AF119B6209C0013642C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9754AF219B6209C0013642C /* sample-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D957E7D119A6108600AEA8FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D957E8AD19AB4E0600AEA8FE /* IP2Location.h in Headers */,
+				D957E81C19A611B000AEA8FE /* IP2Loc_DBInterface.h in Headers */,
+				D957E81E19A611B000AEA8FE /* IP2Location.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		8DD76F960486AA7600D96B5E /* IP2Location */ = {
+		D957E7D319A6108600AEA8FE /* ip2location */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "IP2Location" */;
+			buildConfigurationList = D957E7FC19A6108700AEA8FE /* Build configuration list for PBXNativeTarget "ip2location" */;
 			buildPhases = (
-				8DD76F990486AA7600D96B5E /* Sources */,
-				8DD76F9B0486AA7600D96B5E /* Frameworks */,
-				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+				D957E7CF19A6108600AEA8FE /* Sources */,
+				D957E7D019A6108600AEA8FE /* Frameworks */,
+				D957E7D119A6108600AEA8FE /* Headers */,
+				D957E7D219A6108600AEA8FE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = IP2Location;
-			productInstallPath = "$(HOME)/bin";
-			productName = IP2Location;
-			productReference = 3FB9EA6313178F3F00E9590A /* IP2Location */;
+			name = ip2location;
+			productName = ip2location;
+			productReference = D957E7D419A6108600AEA8FE /* ip2location.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9754AEB19B6209C0013642C /* sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9754AF519B6209C0013642C /* Build configuration list for PBXNativeTarget "sample" */;
+			buildPhases = (
+				D9754AE819B6209C0013642C /* Sources */,
+				D9754AE919B6209C0013642C /* Frameworks */,
+				D9754AEA19B6209C0013642C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9754AF919B621C60013642C /* PBXTargetDependency */,
+			);
+			name = sample;
+			productName = sample;
+			productReference = D9754AEC19B6209C0013642C /* sample */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		08FB7793FE84155DC02AAC07 /* Project object */ = {
+		D957E7CB19A6108600AEA8FE /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "IP2Location" */;
-			compatibilityVersion = "Xcode 3.1";
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = NotusGames;
+			};
+			buildConfigurationList = D957E7CE19A6108600AEA8FE /* Build configuration list for PBXProject "ip2location" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
-			hasScannedForEncodings = 1;
+			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
+				Base,
 			);
-			mainGroup = 08FB7794FE84155DC02AAC07 /* IP2Location */;
+			mainGroup = D957E7CA19A6108600AEA8FE;
+			productRefGroup = D957E7D519A6108600AEA8FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DD76F960486AA7600D96B5E /* IP2Location */,
+				D957E7D319A6108600AEA8FE /* ip2location */,
+				D9754AEB19B6209C0013642C /* sample */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D957E7D219A6108600AEA8FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D957E7E219A6108700AEA8FE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		8DD76F990486AA7600D96B5E /* Sources */ = {
+		D957E7CF19A6108600AEA8FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD76F9A0486AA7600D96B5E /* main.m in Sources */,
-				A55C1FCC12FE08B200D44C66 /* IPLocation.m in Sources */,
-				3FB9EA7313178F9900E9590A /* IP2Location.c in Sources */,
-				3FB9EA7613178FD500E9590A /* imath.c in Sources */,
+				D957E81B19A611B000AEA8FE /* IP2Loc_DBInterface.c in Sources */,
+				D957E7E619A6108700AEA8FE /* IP2Location.m in Sources */,
+				D957E81D19A611B000AEA8FE /* IP2Location.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9754AE819B6209C0013642C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9754AF019B6209C0013642C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D9754AF919B621C60013642C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D957E7D319A6108600AEA8FE /* ip2location */;
+			targetProxy = D9754AF819B621C60013642C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D957E7E019A6108700AEA8FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D957E7E119A6108700AEA8FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		1DEB927508733DD40010E9CD /* Debug */ = {
+		D957E7FA19A6108700AEA8FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = /usr/include/malloc;
-				INSTALL_PATH = /usr/local/bin;
-				PRODUCT_NAME = IP2Location;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		1DEB927608733DD40010E9CD /* Release */ = {
+		D957E7FB19A6108700AEA8FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_MODEL_TUNING = G5;
-				HEADER_SEARCH_PATHS = /usr/include/malloc;
-				INSTALL_PATH = /usr/local/bin;
-				PRODUCT_NAME = IP2Location;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		1DEB927908733DD40010E9CD /* Debug */ = {
+		D957E7FD19A6108700AEA8FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ip2location/ip2location-Prefix.pch";
+				INFOPLIST_FILE = "ip2location/ip2location-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ip2location/libIP2Location/.libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
 		};
-		1DEB927A08733DD40010E9CD /* Release */ = {
+		D957E7FE19A6108700AEA8FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ip2location/ip2location-Prefix.pch";
+				INFOPLIST_FILE = "ip2location/ip2location-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ip2location/libIP2Location/.libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		D9754AF619B6209C0013642C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sample/sample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9754AF719B6209C0013642C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sample/sample-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "IP2Location" */ = {
+		D957E7CE19A6108600AEA8FE /* Build configuration list for PBXProject "ip2location" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB927508733DD40010E9CD /* Debug */,
-				1DEB927608733DD40010E9CD /* Release */,
+				D957E7FA19A6108700AEA8FE /* Debug */,
+				D957E7FB19A6108700AEA8FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "IP2Location" */ = {
+		D957E7FC19A6108700AEA8FE /* Build configuration list for PBXNativeTarget "ip2location" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB927908733DD40010E9CD /* Debug */,
-				1DEB927A08733DD40010E9CD /* Release */,
+				D957E7FD19A6108700AEA8FE /* Debug */,
+				D957E7FE19A6108700AEA8FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D9754AF519B6209C0013642C /* Build configuration list for PBXNativeTarget "sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9754AF619B6209C0013642C /* Debug */,
+				D9754AF719B6209C0013642C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+	rootObject = D957E7CB19A6108600AEA8FE /* Project object */;
 }
