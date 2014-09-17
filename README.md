@@ -11,13 +11,13 @@ For more details, please visit:
 #Installation (Mac OS X)
 1. Download and decompress ip2location-cocoa-x.x.x.zip
 2. For Xcode usage:
-	a. Add ip2location.framework to your Xcode project by dragging and dropping it into Project Navigator
-	b. In your appropriate target, under "Build Settings", select "Runpath Search Paths" in the "Linking" category, and enter "@loader_path/../Frameworks" (without the quotes).
-	c. Build your project
+   1. Add ip2location.framework to your Xcode project by dragging and dropping it into Project Navigator
+   2. In your appropriate target, under "Build Settings", select "Runpath Search Paths" in the "Linking" category, and enter "@loader_path/../Frameworks" (without the quotes).
+   3. Build your project
 3. For build from command line or makefile
-	a. Copy ip2location.framework to your working directory
-	b. Build and link your target with following options added (without the quotes): "-F. -L. -Wl,-framework,ip2location -Wl,-framework,Foundation"
-	c. Change linked framework path in your binary: "install_name_tool -change @rpath/ip2location.framework/Versions/A/ip2location ip2location.framework/Versions/A/ip2location binary_executable"
+   1. Copy ip2location.framework to your working directory
+   2. Build and link your target with following options added (without the quotes): "-F. -L. -Wl,-framework,ip2location -Wl,-framework,Foundation"
+   3. Change linked framework path in your binary: "install_name_tool -change @rpath/ip2location.framework/Versions/A/ip2location ip2location.framework/Versions/A/ip2location binary_executable"
 
 
 # Sample BIN Databases
